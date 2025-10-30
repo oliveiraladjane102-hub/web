@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programação para Internet</title>
+   <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        
+
+    }
+    .box{
+        display:flex;
+        justify-content: center;
+        border-radius: 50%;
+        border: 20px solid pink;
+        background-color: grey;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .box:nth-child(2n){
+        flex: shrink 0;
+    }
+    #item1{order: 2}
+   </style>
+
 </head>
 <body>
-    <h1>Aulas de Programação para Internet</h1>
-
-    <dl>
-        <dt><a href="./1.html">Aula 01</a></dt>
-        <dd>História da WEB</dd>
-
-        <dt><a href="./2.html">Aula 02</a></dt>
-        <dd>Git</dd>
-        
-        <dt><a href="./3.html">Aula 03</a></dt>
-        <dd>HTML básico, Listas e tabelas</dd>
-
-        <dt><a href="./4.html">Aula 04</a></dt>
-        <dd>Formulários e tabelas + introdução CSS</dd>
-
-    </dl>
-
-
+    
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
 </body>
 </html>
